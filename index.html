@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8fe31cfc-3dfa-443e-ae14-2a86a7960e6d" type="text/javascript" async></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-63NWSVBQC9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-63NWSVBQC9');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MERY Jean 1er — Portfolio</title>
@@ -296,6 +286,25 @@ section{
   fill:none;
 }
 
+/* ---------- PROJETS ---------- */
+.project-grid{
+  margin-top:3rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  gap:2rem;
+  align-items:start;
+}
+.project-card{ overflow:hidden; padding:0; }
+.project-img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-bottom:1px solid var(--glass-border);
+}
+.project-body{ padding:2rem; }
+.project-body h3{ font-size:1.3rem; font-weight:600; margin-bottom:0.8rem; }
+.project-body p{ color:var(--text-muted); font-size:0.98rem; max-width:70ch; margin-bottom:1.2rem; }
+
 /* ---------- FORMATION ---------- */
 .formation h2{font-size:clamp(1.9rem,3.2vw,2.7rem); font-weight:700; margin-bottom:3rem;}
 .timeline{
@@ -430,6 +439,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--gold-2); outline-o
   <div class="nav-links" id="navLinks">
     <a href="#profil">Profil</a>
     <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
     <a href="#formation">Formation</a>
     <a href="#contact">Contact</a>
   </div>
@@ -454,13 +464,12 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--gold-2); outline-o
     <g class="schema-node"><circle cx="900" cy="320" r="4"/><text x="910" y="316">JS · PHP</text></g>
     <g class="schema-node"><circle cx="780" cy="260" r="4"/><text x="790" y="256">BDD</text></g>
     <g class="schema-node"><circle cx="820" cy="420" r="4"/><text x="830" y="416">Réseaux</text></g>
-    <g class="schema-node"><circle cx="950" cy="260" r="4"/><text x="925" y="245">Dev</text></g>
+    <g class="schema-node"><circle cx="950" cy="260" r="4"/><text x="925" y="245">Design</text></g>
   </svg>
   <div class="hero-content">
     <div class="eyebrow">Portfolio — Ozangué / Libreville, Gabon</div>
-    <h1>MERY 
-      Jean 1er<br><span class="grad">Keven-Ralf</span></h1>
-    <p class="hero-role">Étudiant en 2ᵉ année BTS Services Informatiques aux Organisations à l'Institut de Technologies d'Owendo — entre développement web, bases de données et systèmes.</p>
+    <h1>MERY Jean 1er<br><span class="grad">Keven-Ralf</span></h1>
+    <p class="hero-role">Étudiant en 2ᵉ année BTS Services Informatiques aux Organisations à l'Institut de Technologies d'Owendo — entre développement web, bases de données et maintenance informatique.</p>
     <div class="hero-meta">
       <span class="pill">📞 065 64 16 47</span>
       <span class="pill">✉ meryjean1er@gmail.com</span>
@@ -530,6 +539,27 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--gold-2); outline-o
       <text class="node-item" x="660" y="444">Affiches, flyers</text>
       <text class="node-item" x="660" y="460">supports visuels</text>
     </svg>
+  </div>
+</section>
+
+<section class="formation" id="projets">
+  <div data-reveal>
+    <div class="eyebrow">Réalisations</div>
+    <h2>Projets</h2>
+  </div>
+  <div class="project-grid" data-reveal>
+    <div class="card project-card">
+      <img class="project-img" src="images/Capture 1.png" alt="Page d'accueil du site vitrine réalisé pour un restaurant gabonais à Libreville, mettant en avant la cuisine gabonaise">
+      <div class="project-body">
+        <h3>Site vitrine — restaurant gabonais</h3>
+        <p>Conception d'un site vitrine pour un restaurant de la place à Libreville, mettant en valeur la cuisine gabonaise : page d'accueil, menu, galerie et réservation en ligne.</p>
+        <div class="tags">
+          <span class="tag">Site vitrine</span>
+          <span class="tag">HTML / CSS</span>
+          <span class="tag">UI Design</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
